@@ -1,0 +1,11 @@
+.menu-todos {
+    background-color: #232f3e;
+}
+
+.menu-todos a {
+    color: #fff;
+}
+
+.menu-todos a:hover {
+    color: #ccc; 
+}

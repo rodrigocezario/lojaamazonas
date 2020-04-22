@@ -1,0 +1,618 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Amazonas.loko.br | Compre livros, informática, Tvs, Casa & Cozinha, e muito mais</title>
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap4 files-->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font awesome 5 -->
+    <link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+
+    <!-- custom style -->
+    <link href="css/ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
+
+    <!-- custom javascript -->
+    <script src="js/script.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        /// some script
+
+        // jquery ready start
+        $(document).ready(function () {
+        // jQuery code
+            $('.item-thumb').click(function(){
+                $('#img-detail').attr('src', $(this).data('image'));
+            })
+        });
+        // jquery end
+    </script>
+
+</head>
+
+<body>
+
+    <header class="section-header">
+        <section class="header-top-light border-bottom">
+            <div class="container">
+                <nav class="d-flex flex-column flex-md-row">
+                    <ul class="nav mr-auto d-none d-md-flex">
+                        <li>
+                            <a href="#" class="nav-link px-2">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-2">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-2">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Entrega </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Ajuda </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-comment"></i> Fale conosco pelo chat </a>
+                        </li>
+                    </ul>
+                    <!-- navbar-nav.// -->
+                </nav>
+            </div>
+        </section>
+        <section class="header-main border-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-sm-4 col-12">
+                        <a href="./" class="brand-wrap">
+                            <img class="logo" src="images/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-xl-5 col-sm-8 col-md-4 d-none d-md-block">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="O que você tá procurando?">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- search-wrap .end// -->
+                    </div>
+                    <!-- col.// -->
+                    <div class="col-lg-5 col-xl-4 col-sm-12">
+                        <div class="widgets-wrap d-flex justify-content-end">
+                            <div class="widget- mr-2">
+                                <a href="#" class="icontext">
+                                    <div class="icon">
+                                        <i class="fa fa-2x fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="text">
+                                        <small class="text-muted">Carrinho</small> <br>
+                                        <span>3 itens</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="widget-header mr-2">
+                                <a href="#" class="icontext">
+                                    <div class="icon">
+                                        <i class="fa fa-2x fa-heart"></i>
+                                    </div>
+                                    <div class="text">
+                                        <small class="text-muted">Lista</small> <br>
+                                        <span>Desejos</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- widget .// -->
+                            <div class="widget-header dropdown">
+                                <a href="#" class="ml-3 icontext" data-toggle="dropdown" data-offset="20,10">
+                                    <div class="icon">
+                                        <i class="fa fa-2x fa-user-circle"></i>
+                                    </div>
+                                    <div class="text">
+                                        <small class="text-muted">Entre / Cadastre-se</small> <br>
+                                        <span>Faça seu login <i class="fa fa-caret-down"></i></span>
+                                    </div>
+                                </a>
+                                <!-- fomulário de autenticação -->
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <form class="px-4 py-3">
+                                        <div class="form-group">
+                                            <label>Endereço de Email</label>
+                                            <input type="email" class="form-control" placeholder="email@exemplo.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" placeholder="Senha">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Entrar</button>
+                                    </form>
+                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
+                                </div>
+                                <!--  dropdown-menu .// -->
+                            </div>
+                            <!-- widget  dropdown.// -->
+                        </div>
+                        <!-- widgets-wrap.// -->
+                    </div> <!-- col.// -->
+                </div>
+                <!-- row.// -->
+            </div>
+            <!-- container.// -->
+        </section>
+        <!-- header-main .// -->
+    </header>
+
+    <!-- menu-main .// -->
+    <nav class="navbar navbar-main navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+                aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pl-0" data-toggle="collapse" data-target="#menu-all" href="#"
+                            aria-haspopup="true" aria-expanded="false">
+                            <strong> <i class="fa fa-bars"></i> &nbsp;
+                                Todas as categorias</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Video Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notebooks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Câmeras Digitais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Som e Vídeo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Telefonia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Players Portáteis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Áudio Profissonal</a>
+                    </li>
+                </ul>
+            </div> <!-- collapse .// -->
+        </div> <!-- container .// -->
+    </nav>
+    <div class="container-fluid menu-todos">
+        <div class="container">
+            <div class="collapse container-fluid menu-todos" id="menu-all">
+                <!-- menu completo de categorias e subcategorias .//-->
+                <ul class="d-inline-flex row p-3">
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 1</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto"><a href="#">Categoria 2</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 3</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                            <li><a href="#">Subcategoria 3</a></li>
+                            <li><a href="#">Subcategoria 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 4</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                            <li><a href="#">Subcategoria 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 5</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 6</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                            <li><a href="#">Subcategoria 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 7</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                            <li><a href="#">Subcategoria 3</a></li>
+                            <li><a href="#">Subcategoria 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 8</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                            <li><a href="#">Subcategoria 3</a></li>
+                            <li><a href="#">Subcategoria 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 9</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                            <li><a href="#">Subcategoria 3</a></li>
+                            <li><a href="#">Subcategoria 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-2 col-lg-auto col-sm-auto">
+                        <a href="#">Categoria 10</a>
+                        <ul>
+                            <li><a href="#">Subcategoria 1</a></li>
+                            <li><a href="#">Subcategoria 2</a></li>
+                            <li><a href="#">Subcategoria 3</a></li>
+                            <li><a href="#">Subcategoria 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- section-header.// -->
+    <!-- ========================= SECTION PAGETOP ========================= -->
+    <section class="border padding-y-sm">
+        <div class="container">
+            <nav>
+                <ol class="breadcrumb text-white">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Categoria</a></li>
+                    <li class="breadcrumb-item"><a href="#">SubCategoria</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Nome do produto</li>
+                </ol>
+            </nav>
+        </div> <!-- container //  -->
+    </section>
+    <!-- ========================= SECTION INTRO END// ========================= -->
+
+    <!-- ========================= SECTION CONTENT ========================= -->
+    <section class="section-content padding-top-sm">
+        <div class="container">
+            <div class="card">
+                <div class="row no-gutters">
+                    <aside class="col-sm-6 border-right">
+                        <article class="gallery-wrap">
+                            <div class="img-big-wrap">
+                               <a><img src="images/9.jpg" class="item" id="img-detail"></a> 
+                            </div> 
+                            <!-- img-big-wrap.// -->
+                            <div class="thumbs-wrap">
+                                <a href="javascript:;" class="item-thumb" data-image="images/9.jpg"> <img
+                                        src="images/9.jpg"></a>
+                                <a href="javascript:;" class="item-thumb" data-image="images/1.jpg"> <img
+                                        src="images/1.jpg"></a>
+                                <a href="javascript:;" class="item-thumb" data-image="images/7.jpg"> <img
+                                        src="images/7.jpg"></a>
+                                <a href="javascript:;" class="item-thumb" data-image="images/3.jpg"> <img
+                                        src="images/3.jpg"></a>
+                            </div> 
+                            <!-- thumbs-wrap.// -->
+                        </article> 
+                        <!-- gallery-wrap .end// -->
+                    </aside>
+                    <main class="col-sm-6">
+                        <article class="content-body">
+                            <h3 class="title">Gaming headphone</h3>
+                            <span>por</span> <a href="#">Fabricante</a>
+                            <div class="rating-wrap mb-3">
+                                <span class="badge badge-warning"> <i class="fa fa-star"></i> 3.8</span>
+                                <small class="text-muted ml-2">45 avaliações</small>
+                            </div>
+                            <p>WH-1000XM3 é o headphone bluetooth mais premium da linha Noise Cancelling Sony. É equipado com o novo processador HD QN1 - que permite otimizar o som de acordo com características de quem o está usando e do ambiente onde se encontra. 
+                            </p>
+
+                            <ul class="list-check mb-4">
+                                <li>Com o Processador de cancelamento de ruído HD QN1, você ouve sem distrações</li>
+                                <li>Exclusivo NC pessoal automático e otimização de pressão atmosférica</li>
+                                <li>Liberdade sem fios, com tecnologia BLUETOOTH® e NFC</li>
+                            </ul>
+
+                            <div class="item-option-select">
+                                <h6>Modelo</h6>
+                                <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-light active">
+                                        <input type="radio" name="radio_size" checked=""> Xs
+                                    </label>
+                                    <label class="btn btn-light">
+                                        <input type="radio" name="radio_size"> Xs Max
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="item-option-select">
+                                <h6>Cor</h6>
+                                <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-light">
+                                        <input type="radio" name="radio_color"> Silver
+                                    </label>
+                                    <label class="btn btn-light active">
+                                        <input type="radio" name="radio_color" checked=""> Gray
+                                    </label>
+                                    <label class="btn btn-light">
+                                        <input type="radio" name="radio_color"> Gold
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="item-option-select">
+                                <h6>Capacidade</h6>
+                                <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-light active">
+                                        <input type="radio" name="options" checked=""> 64 GB
+                                    </label>
+                                    <label class="btn btn-light">
+                                        <input type="radio" name="options"> 256 GB
+                                    </label>
+                                    <label class="btn btn-light">
+                                        <input type="radio" name="options"> 512 GB
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 align-items-center">
+                                <div class="col-8">
+                                    <div class="price-wrap">
+                                        <span class="text-muted">por: </span>
+                                        <span class="price h3">R$ 2.200,00 </span>
+                                        <del class="price-old"> de: R$ 2.999,00</del>
+                                    </div>
+                                    <p class="text-muted">10X de R$ 220,00 sem juros</p>
+                                </div> <!-- col.// -->
+                                <div class="col text-right">
+                                    <a href="#" class="btn  btn-primary"> Comprar <i
+                                            class="fas fa-shopping-cart"></i> </a>
+                                    <a href="#" class="btn  btn-light"> <i class="fas fa-heart"></i> </a>
+                                </div> <!-- col.// -->
+                            </div> <!-- row.// -->
+
+                        </article> 
+                        <!-- product-info-aside .// -->
+                    </main> <!-- col.// -->
+                </div> <!-- row.// -->
+            </div>
+
+            <hr class="divider">
+
+            <article class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <aside class="col-md-6">
+                            <h5>Características</h5>
+                            <dl class="row">
+                                  <dt class="col-sm-3">Áudio</dt>
+                                  <dd class="col-sm-9">Resposta de frequência de 20 Hz a 20 kHz</dd>
+            
+                                  <dt class="col-sm-3">Microfone</dt>
+                                  <dd class="col-sm-9">Tipo embutido</dd>
+            
+                                  <dt class="col-sm-3">Bateria</dt>
+                                  <dd class="col-sm-9">Bataria para 8 horas de duração</dd>
+            
+                                  <dt class="col-sm-3">Design</dt>
+                                  <dd class="col-sm-9">Disponível na cor preta com detalhes em azu</dd>
+                                  
+                                  <dt class="col-sm-3">Graphics</dt>
+                                  <dd class="col-sm-9">Tamanho dos drivers: 40 milímetros</dd>
+                            </dl>
+                        </aside>
+                        <aside class="col-md-6">
+                            <h5>Detalhes</h5>
+                            <ul class="list-check">
+                                <li>Processador HD QN1 – Apenas Música. Nada mais</li>
+                                <li>Noise Canceling Adaptável</li>
+                                <li>Bluetooth e NFC</li>
+                                <li>APP Headphones Connect: Controle de som adaptável, configurações de ambientes e ajustes de equalização pelo smartphone</li>
+                                <li>Hi-Res Áudio: áudio de alta resolução</li>
+                                <li>Painel sensível ao toque</li>
+                            </ul>
+                        </aside>
+                    </div> <!-- row.// -->
+                    <hr>
+                    <h5>Experimente um novo patamar de silêncio</h5>
+                    <p>
+                        Saiba como é desfrutar apenas o som da sua música, com cancelamento de ruído que bloqueia muito
+                        mais som externo do que antes. E experimente como os headphones inteligentes podem oferecer a
+                        tecnologia avançada com noise cancelling, como o Adaptive Sound Control, e a conveniência das
+                        funções inteligentes, incluindo Quick Attention, a compatibilidade com o Assistente de voz e o
+                        controle por toque.
+                    </p>
+                    <h5>Mais potência = muito menos ruído</h5>
+                    <p>
+                        Com o novo Processador de cancelamento de ruído HD QN1, a capacidade de cancelamento de ruído foi bastante aprimorada. O processador de NC dedicado também garante uma excelente reprodução das músicas devido à performance do processador.
+                    </p>
+                </div> <!-- card-body.// -->
+            </article>
+        </div> 
+    </section>
+
+    <hr class="divider">
+
+    <div class="container">
+
+        <header class="section-heading">
+            <a href="#" class="btn btn-outline-primary float-right">Ver todos</a>
+            <h3 class="section-title">Produtos similares</h3>
+        </header>
+        <!-- sect-heading -->
+
+        <ul class="row">
+            <ul class="col-md-3">
+                <div href="#" class="card card-product-grid">
+                    <a href="#" class="img-wrap"> <img src="images/produtos/doebjc.jpg"> </a>
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title">Celular com sistema smartphone</a>
+                        <p class="text-muted"><del> De: R$ 220,00</del></p>
+                        <div class="price mt-1">Por: R$ 120,00</div>
+                        <p class="text-muted">12X de R$ 10,00 sem juros</p>
+                    </figcaption>
+                </div>
+            </ul>
+            <ul class="col-md-3">
+                <div href="#" class="card card-product-grid">
+                    <a href="#" class="img-wrap"> <img src="images/produtos/4rb80e.jpg"> </a>
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title">Notebook processador Intel</a>
+                        <p class="text-muted"><del> De: R$ 3.500,00</del></p>
+                        <div class="price mt-1">Por: R$ 2.999,00</div>
+                        <p class="text-muted">12X de R$ 249,92 sem juros</p>
+                    </figcaption>
+                </div>
+            </ul>
+            <ul class="col-md-3">
+                <div href="#" class="card card-product-grid">
+                    <a href="#" class="img-wrap"> <img src="images/produtos/1pa20b.jpg"> </a>
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title">Jogo de mundo aberto</a>
+                        <p class="text-muted"><del> De: R$ 230,00</del></p>
+                        <div class="price mt-1">Por R$ 90,00</div>
+                        <p class="text-muted">12X de R$ 7,50 sem juros</p>
+                    </figcaption>
+                </div>
+            </ul>
+            <ul class="col-md-3">
+                <div href="#" class="card card-product-grid">
+                    <a href="#" class="img-wrap"> <img src="images/produtos/3dbsnm.jpg"> </a>
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title">HD externo de alta capacidade</a>
+                        <p class="text-muted"><del> De: R$ 250,00</del></p>
+                        <div class="price mt-1">Por R$ 200,00</div>
+                        <p class="text-muted">12X de R$ 16,67 sem juros</p>
+                    </figcaption>
+                </div>
+            </ul>
+        </ul>
+
+    </div>
+
+    <hr class="divider">
+    
+    <!-- ========================= SECTION CONTENT END// ========================= -->
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="section-footer border-top">
+        <div class="container">
+            <section class="footer-top padding-y">
+                <div class="row">
+                    <aside class="col-md col-6">
+                        <h6 class="title">Marcas</h6>
+                        <ul class="list-unstyled">
+                            <li> <a href="#">Sony</a></li>
+                            <li> <a href="#">Samsung</a></li>
+                            <li> <a href="#">Apple</a></li>
+                            <li> <a href="#">Nintendo</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-md col-6">
+                        <h6 class="title">Instituicional</h6>
+                        <ul class="list-unstyled">
+                            <li> <a href="#">Sobre a amazonas</a></li>
+                            <li> <a href="#">Seja um fornecedor</a></li>
+                            <li> <a href="#">Loja mais próxima</a></li>
+                            <li> <a href="#">Regras do site</a></li>
+                            <li> <a href="#">Trabalhe na amazonas</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-md col-6">
+                        <h6 class="title">Ajuda</h6>
+                        <ul class="list-unstyled">
+                            <li> <a href="#">Central de atendimento</a></li>
+                            <li> <a href="#">Como comprar</a></li>
+                            <li> <a href="#">Trocas de devoluções</a></li>
+                            <li> <a href="#">Direito de arrependimento</a></li>
+                            <li> <a href="#">Politica de privacidade</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-md col-6">
+                        <h6 class="title">Minha conta</h6>
+                        <ul class="list-unstyled">
+                            <li> <a href="#"> Autenticação </a></li>
+                            <li> <a href="#"> Cadastro </a></li>
+                            <li> <a href="#"> Configuração da conta </a></li>
+                            <li> <a href="#"> Minhas compras </a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-md">
+                        <h6 class="title">Redes sociais</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#"> <i class="fab fa-facebook"></i> Facebook </a></li>
+                            <li><a href="#"> <i class="fab fa-twitter"></i> Twitter </a></li>
+                            <li><a href="#"> <i class="fab fa-instagram"></i> Instagram </a></li>
+                            <li><a href="#"> <i class="fab fa-youtube"></i> Youtube </a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+            <!-- footer-top.// -->
+            <section class="footer-bottom border-top row">
+                <div class="col-md-2">
+                    <p class="text-muted"> © 2020 Amazonas </p>
+                </div>
+                <div class="col-md-8 text-md-center">
+                    <span class="px-2">Vendas online digital</span>
+                    <span class="px-2">CNPJ: 00.111.222.333/0001-77</span>
+                    <span class="px-2">Rua Brasil, 33, Centro - Itapema Beach</span>
+                </div>
+                <div class="col-md-2 text-md-right text-muted">
+                    <i class="fab fa-lg fa-cc-visa"></i>
+                    <i class="fab fa-lg fa-cc-paypal"></i>
+                    <i class="fab fa-lg fa-cc-mastercard"></i>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- ========================= FOOTER END // ========================= -->
+
+
+</body>
+
+</html>
