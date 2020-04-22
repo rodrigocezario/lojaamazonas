@@ -14,7 +14,7 @@ Muitas das práticas realizadas podem ser consideradas como não adequada para o
 ## O Projeto
 ### Modelo de classes
 O desenvolvimento do projeto considerou o seguinte modelo de classe:
-![Modelo de classes do projeto](rlojaamazonas/documentos/classes.png?raw=true "Modelo de classes do projeto")
+![Modelo de classes do projeto](lojaamazonas/documentos/classes.png?raw=true "Modelo de classes do projeto")
 A primeira esta de desenvolvimento do projeto foram implementadas as classes necessárias para exibição dos produtos. A implementação das classes necessárias para a realização do fechamento de pedidos serão implementadas na segunda etapa do projeto (ainda não implementada).
 
 ### Modelo de Dados
