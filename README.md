@@ -19,7 +19,7 @@ A primeira esta de desenvolvimento do projeto foram implementadas as classes nec
 
 ### Modelo de Dados
 Além do modelo de classes, utilizou-se o MER (Modelo Entidade Relacionamento) para representação conceitual para descrever as tabelas (entidades) para nosso modelo de negócio. A figura a seguir apresenta o modelo de dados utilizado neste projeto.
-![Modelo Entidade Relacionamento](rlojaamazonas/documentos/mer.png?raw=true "Modelo Entidade Relacionamento")
+![Modelo Entidade Relacionamento](lojaamazonas/documentos/mer.png?raw=true "Modelo Entidade Relacionamento")
 
 ### Arquivos de Dados
 Além do modelo de dados o projeto conta com o arquivo de dados em SQLite e o Script para criação em MySQL. É sabido que SQLite é de longe a escolha adequada para o desenvolvimento de projeto web. No entanto, como se trata do desenvolvimento de um projeto de cunho acadêmico, a utilizando do SQLite é interessante pois não obriga a instalação de mais softwares no equipamento, pois se trata de uma biblioteca que implementa um banco de dados SQL embutido. O código implementado em sua utilização em nada difere (no caso deste projeto) da implementação utilizando quando optado em utilizar um gerenciador de banco de dados como MySQL ou Oracle. Você pode fazer o download do arquivo de dados [aqui](lojaamazonas/loja.db)
