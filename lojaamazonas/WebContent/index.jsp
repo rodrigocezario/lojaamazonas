@@ -5,9 +5,7 @@
 <html lang="pt-BR">
 
 <head>
-
-<%@include file="head.jsp" %>
-
+	<jsp:include page="head.jsp" />
 </head>
 
 <body>

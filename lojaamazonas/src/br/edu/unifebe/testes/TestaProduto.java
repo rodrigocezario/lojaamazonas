@@ -61,6 +61,7 @@ public class TestaProduto {
 			System.out.println("Preço normal: " + p.getPrecoNormal());
 			System.out.println("Preço venda: " + p.getPrecoVenda());
 			System.out.println("Foto: " + p.getFotoCapa());
+			
 			System.out.println("Categoria/Subcategoria: " + p.getCategoria().getNome() + "/"
 					+ p.getCategoria().getSubcategoria().getNome());
 			System.out.println("\n========\n");
