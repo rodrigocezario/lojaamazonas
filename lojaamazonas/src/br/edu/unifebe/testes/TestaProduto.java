@@ -42,8 +42,8 @@ public class TestaProduto {
 
 			// Produto p = dao.getSelecionar(codigo);
 
-			List<Produto> p = dao.getSuperDestaque();
-			//List<Produto> p = dao.getGrandesOfertas();
+			//List<Produto> p = dao.getSuperDestaque();
+			List<Produto> p = dao.getGrandesOfertas();
 			 //List<Produto> p = dao.getMenoresPrecos();
 
 			imprimir(p);
@@ -63,7 +63,7 @@ public class TestaProduto {
 			System.out.println("Foto: " + p.getFotoCapa());
 			
 			System.out.println("Categoria/Subcategoria: " + p.getCategoria().getNome() + "/"
-					+ p.getCategoria().getSubcategoria().getNome());
+					+ p.getCategoria().getSubcategorias().get(0).getNome());
 			System.out.println("\n========\n");
 		} else
 			System.out.println("Produto não encontrado...");
@@ -82,7 +82,7 @@ public class TestaProduto {
 			System.out.println("Preço venda: " + nf.format(p.getPrecoVenda()));
 			System.out.println("Foto: " + p.getFotoCapa());
 			System.out.println("Categoria/Subcategoria: " + p.getCategoria().getNome() + "/"
-					+ p.getCategoria().getSubcategoria().getNome());
+					+ p.getCategoria().getSubcategorias().get(0).getNome());
 			System.out.println("\n========\n");
 		}
 	}

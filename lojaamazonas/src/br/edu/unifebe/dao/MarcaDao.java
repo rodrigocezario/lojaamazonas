@@ -20,8 +20,12 @@ public class MarcaDao implements IDao<Marca> {
 
 	@Override
 	public void setSalvar(Marca e) throws SQLException {
-		// TODO Auto-generated method stub
-		
+		String sql = "insert into Marca (MarcaNome, MarcaSite, MarcaStatus) values (?, ?, 1)";
+		PreparedStatement prmt = this.conexao.prepareStatement(sql);
+		prmt.setString(1, e.getNome());
+		prmt.setString(2, e.getSite());
+		prmt.execute();
+		prmt.close();
 	}
 	
 	@Override

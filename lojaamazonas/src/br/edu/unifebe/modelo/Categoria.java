@@ -16,7 +16,7 @@ public class Categoria {
 	}
 	
 	public Categoria getSubcategoria() {
-		return subcategorias.get(0);
+		return !subcategorias.isEmpty() ? subcategorias.get(0): null;
 	}
 	
 	public void adicionaSubCategoria(Categoria categoria) {
