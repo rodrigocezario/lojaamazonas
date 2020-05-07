@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //código de inicialização
+            let url = 'http://localhost:8080/lojaamazonas/servicos/ws/marcas';
+            $.getJSON(url, function(data){
+                $(data).each(function(i, element){
+                    //console.log(element.nome);
+                    $("#lista").append("<li>"+ element.nome +"</li>");
+                });
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                //console.log("Erro ao carregar lista de marcas");
+                $("#erro").append("Erro ao carregar lista: "+ jqXHR.responseText);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1>Lista de Marcas</h1>
+    <ul id="lista"></ul>
+    <div id="erro"></div>
+</body>
+</html>
